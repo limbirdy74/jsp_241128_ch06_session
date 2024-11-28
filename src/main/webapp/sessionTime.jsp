@@ -12,7 +12,8 @@
 		out.println("현재 세션의 유효시간 : " + sessionTime + "초" + "<br><br>");
 		session.setMaxInactiveInterval(60); // 세션의 유효시간 설정(초) -> 60 초로 수정
 		out.println("현재 세션의 유효시간 : " + sessionTime + "초" + "<br><br>");
-		
+		String sesId = session.getId();
+		out.println("현재 세션의 ID : " + sesId + "초" + "<br><br>");
 	%>
 	<br><br>
 	<a href="myinfo.jsp">내 정보 바로가기</a>
